@@ -16,7 +16,7 @@ function uninstall() {}
 
 function startup() {
   let defaults = new Preferences({defaultBranch: true});
-  defaults.set("network.predictor.enable-prefetch", false);
+  defaults.set("security.pki.certificate_transparency.mode", 0);
 }
 
 function shutdown(data, reason) {}
